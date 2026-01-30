@@ -36,5 +36,5 @@ This project showcases professional certifications with options to **view detail
 ## 🔗 Live Certification Link
 
 - **Responsive Web Design –**  
-  [View Certificate](https://www.freecodecamp.org/certification/prakharcodes433/responsive-web-design-v9)
+  [View Certificate](https://prakharr3act.github.io/certifications/)
 
