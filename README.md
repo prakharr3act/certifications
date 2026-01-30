@@ -1,11 +1,11 @@
-# 🎓 Certifications Page
+#  Certifications Page
 
 A simple and clean **Certifications web page** built using **HTML, CSS, and JavaScript**.  
 This project showcases professional certifications with options to **view details** and **download certificates**.
 
 ---
 
-## 📌 Features
+##  Features
 
 - 📄 Displays certification cards with title and issuer  
 - 🖼️ Shows certificate image preview  
@@ -16,7 +16,7 @@ This project showcases professional certifications with options to **view detail
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5** – Structure of the page  
 - **CSS3** – Styling (external stylesheet)  
@@ -24,7 +24,7 @@ This project showcases professional certifications with options to **view detail
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 .
