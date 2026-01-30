@@ -31,5 +31,4 @@ This project showcases professional certifications with options to **view detail
 ├── index.html
 ├── styles.css
 ├── Prakhar_Patel_Web_Design.png
-├── responsiveWebDesign.pdf
 └── README.md
