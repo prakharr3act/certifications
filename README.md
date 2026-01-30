@@ -7,12 +7,12 @@ This project showcases professional certifications with options to **view detail
 
 ##  Features
 
-- 📄 Displays certification cards with title and issuer  
-- 🖼️ Shows certificate image preview  
-- ⬇️ Download certificate as a file  
-- 🔗 Redirect to official certification verification page  
-- ⚡ Lightweight and fast (no frameworks used)  
-- 📱 Responsive-ready structure  
+-  Displays certification cards with title and issuer  
+-  Shows certificate image preview  
+-  Download certificate as a file  
+-  Redirect to official certification verification page  
+-  Lightweight and fast (no frameworks used)  
+-  Responsive-ready structure  
 
 ---
 
