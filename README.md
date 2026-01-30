@@ -32,3 +32,9 @@ This project showcases professional certifications with options to **view detail
 ├── styles.css
 ├── Prakhar_Patel_Web_Design.png
 └── README.md
+
+## 🔗 Live Certification Link
+
+- **Responsive Web Design –**  
+  [View Certificate](https://www.freecodecamp.org/certification/prakharcodes433/responsive-web-design-v9)
+
