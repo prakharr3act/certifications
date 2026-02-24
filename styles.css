@@ -1,132 +1,146 @@
+
 :root {
-  --primary-color: #2563eb;
-  --dark-color: #1e293b;
-  --bg-color: #f8fafc;
-  --card-bg: #ffffff;
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--dark-color);
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
   padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
-  font-size: clamp(1.8rem, 10vw, 2.5rem);
-  font-weight: 800;
-  margin-bottom: 40px;
-  letter-spacing: -1px;
   text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
-.card {
-  margin-top: 30px;
-  background: var(--card-bg);
-  border-radius: 16px;
-  padding: 24px;
+.subtitle {
+  text-align: center;
   max-width: 600px;
-  width: 100%;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
-              0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.05);
-  box-sizing: border-box;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-  margin-bottom: 20px;
-  background-color: #eee; 
-}
-
-.cert-info {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.cert-info h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.25rem;
-}
-
-.cert-info p {
-  margin: 0;
+  margin: 0 auto 50px auto;
   color: #64748b;
   font-size: 0.95rem;
 }
 
-.btn-group {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-button {
-  font-family: inherit;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-  border: none;
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card img {
   width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.cert-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+button, .btn-link {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.2s;
 }
 
 .btn-download {
-  background-color: var(--dark-color);
+  background: var(--dark);
   color: white;
+  border: none;
 }
 
 .btn-download:hover {
-  background-color: #000;
+  background: black;
 }
 
-.btn-details {
-  background-color: transparent;
-  color: var(--dark-color);
+.btn-link {
   border: 2px solid #e2e8f0;
+  color: var(--dark);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.btn-link:hover {
+  background: #f1f5f9;
 }
 
-.btn-details:hover {
-  background-color: #f1f5f9;
-  border-color: #cbd5e1;
+.about {
+  margin-top: 80px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 20px 15px;
-  }
+.about h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
 
-  .card {
-    padding: 16px;
-    margin-top: 20px;
-  }
+.about p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
 
-  .btn-group {
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+
+@media(max-width: 768px) {
+  .grid {
     grid-template-columns: 1fr;
-  }
-
-  button {
-    padding: 14px 20px;
   }
 }
